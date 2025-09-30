@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O nas — Simplika</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap");
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+        background: #f6f4f0;
+        color: #4f4d49;
+      }
+
+      .studio-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem 1.5rem;
+      }
+
+      .studio-section__inner {
+        max-width: 960px;
+        text-align: center;
+      }
+
+      .studio-section__eyebrow {
+        font-size: 0.75rem;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: #9d9a94;
+        margin-bottom: 2.5rem;
+      }
+
+      .studio-section__title {
+        margin: 0 0 2rem;
+        font-family: "Cormorant Garamond", "Times New Roman", serif;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #2d2b28;
+      }
+
+      .studio-section__description {
+        margin: 0 auto 3.5rem;
+        max-width: 760px;
+        font-size: 1.05rem;
+        line-height: 1.85;
+        color: #6f6c67;
+      }
+
+      .studio-section__cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding-bottom: 0.25rem;
+        font-size: 0.85rem;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #2d2b28;
+        border-bottom: 1px solid rgba(45, 43, 40, 0.35);
+        transition: color 0.3s ease, border-color 0.3s ease;
+      }
+
+      .studio-section__cta::after {
+        content: "\2192";
+        font-size: 1.1em;
+        transform: translateX(0);
+        transition: transform 0.3s ease;
+      }
+
+      .studio-section__cta:hover {
+        color: #1e1c1a;
+        border-color: rgba(30, 28, 26, 0.6);
+      }
+
+      .studio-section__cta:hover::after {
+        transform: translateX(4px);
+      }
+
+      @media (max-width: 600px) {
+        .studio-section {
+          padding: 4.5rem 1.25rem;
+        }
+
+        .studio-section__title {
+          letter-spacing: 0.05em;
+        }
+
+        .studio-section__cta {
+          letter-spacing: 0.3em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="studio-section" aria-labelledby="studio-title">
+      <div class="studio-section__inner">
+        <p class="studio-section__eyebrow">O nas</p>
+        <h2 class="studio-section__title" id="studio-title">
+          Simplika to pracownia architektury wnętrz w Warszawie
+        </h2>
+        <p class="studio-section__description">
+          Zajmujemy się projektowaniem i aranżacją wnętrz, takich jak mieszkania,
+          domy i apartamenty. Specjalizujemy się w projektach wnętrz prywatnych,
+          komercyjnych i przestrzeni użyteczności publicznej. W SIMPLIKA wierzymy,
+          że otoczenie ma ogromny wpływ na samopoczucie, dlatego tworzymy
+          przestrzenie na miarę stylu życia naszych klientów.
+        </p>
+        <a class="studio-section__cta" href="#">Nasze realizacje</a>
+      </div>
+    </section>
+  </body>
+</html>
